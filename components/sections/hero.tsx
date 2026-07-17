@@ -103,7 +103,7 @@ export function Hero() {
             <MagneticButton href="#programs" variant="gold">
               Explore Programs <ArrowRight size={16} />
             </MagneticButton>
-            <MagneticButton href="#contact" variant="outline">
+            <MagneticButton href="/connect" variant="outline">
               Get in Touch
             </MagneticButton>
           </motion.div>

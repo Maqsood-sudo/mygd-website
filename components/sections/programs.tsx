@@ -1,7 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 import { SectionLabel } from "@/components/ui/section-label";
 import { StaggerGroup, StaggerItem } from "@/components/ui/reveal";
 import { PROGRAMS } from "@/lib/content";
+
+const CARD_CLASS =
+  "group block overflow-hidden rounded-[16px] border border-gold/10 bg-navy-mid transition-all duration-300 hover:-translate-y-1.5 hover:border-gold/60 hover:shadow-[0_16px_48px_rgba(0,0,0,0.3)]";
 
 export function Programs() {
   return (
@@ -22,12 +26,8 @@ export function Programs() {
         >
           {PROGRAMS.map((program, i) => {
             const Icon = program.icon;
-            return (
-              <StaggerItem
-                key={program.id}
-                variant="scale"
-                className="group overflow-hidden rounded-[16px] border border-gold/10 bg-navy-mid transition-all duration-300 hover:-translate-y-1.5 hover:border-gold/60 hover:shadow-[0_16px_48px_rgba(0,0,0,0.3)]"
-              >
+            const body = (
+              <>
                 <div className="relative flex h-[150px] items-center justify-center overflow-hidden bg-gradient-to-br from-navy-light to-navy">
                   {program.image ? (
                     <>
@@ -37,7 +37,9 @@ export function Programs() {
                         fill
                         priority
                         sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                        style={{ objectPosition: program.imagePosition ?? "center" }}
+                        style={{
+                          objectPosition: program.imagePosition ?? "center",
+                        }}
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-navy/10 to-transparent" />
@@ -77,6 +79,18 @@ export function Programs() {
                     ))}
                   </div>
                 </div>
+              </>
+            );
+
+            return (
+              <StaggerItem key={program.id} variant="scale">
+                {program.href ? (
+                  <Link href={program.href} className={CARD_CLASS}>
+                    {body}
+                  </Link>
+                ) : (
+                  <div className={CARD_CLASS}>{body}</div>
+                )}
               </StaggerItem>
             );
           })}

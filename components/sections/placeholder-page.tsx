@@ -36,7 +36,7 @@ export function PlaceholderPage({
             <p className="mb-8 leading-relaxed text-white/60">
               {description}
             </p>
-            <MagneticButton href="/#contact" variant="gold">
+            <MagneticButton href="/connect" variant="gold">
               Get in Touch
             </MagneticButton>
           </Reveal>

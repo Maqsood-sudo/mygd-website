@@ -5,13 +5,13 @@ import { NewsletterSignup } from "./newsletter-signup";
 const PROGRAM_LINKS = [
   { label: "All Programs", href: "/#programs" },
   { label: "Cedar Point Trip", href: "/#programs" },
-  { label: "Upcoming Events", href: "/#events" },
+  { label: "Upcoming Events", href: "/events" },
 ];
 
 const COMMUNITY_LINKS = [
   { label: "IAGD Masjid", href: "https://iagd.net", external: true },
   { label: "Prayer Times", href: "/" },
-  { label: "Volunteer", href: "/#contact" },
+  { label: "Volunteer", href: "/connect" },
 ];
 
 export function SiteFooter() {

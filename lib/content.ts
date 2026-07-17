@@ -1,6 +1,5 @@
 import {
   BookOpen,
-  Tent,
   Moon,
   Volleyball,
   RollerCoaster,
@@ -14,7 +13,11 @@ import {
   Clock,
 } from "lucide-react";
 import type { ComponentType } from "react";
-import { InstagramIcon, YoutubeIcon } from "@/components/ui/social-icons";
+import {
+  InstagramIcon,
+  YoutubeIcon,
+  WhatsappIcon,
+} from "@/components/ui/social-icons";
 
 export type IconComponent = ComponentType<{
   size?: number;
@@ -25,11 +28,10 @@ export type IconComponent = ComponentType<{
 export const NAV_LINKS = [
   { label: "About", href: "/#about" },
   { label: "Programs", href: "/#programs" },
-  { label: "Brothers", href: "/events/brothers" },
-  { label: "Sisters", href: "/events/sisters" },
+  { label: "Events", href: "/events" },
   { label: "Mizan", href: "/mizan" },
-  { label: "Merch", href: "/merch" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Shop", href: "/shop" },
+  { label: "Connect", href: "/connect" },
 ] as const;
 
 export const PILLARS = [
@@ -49,6 +51,7 @@ export type Program = {
   meta: ProgramMeta[];
   image?: string;
   imagePosition?: string;
+  href?: string;
 };
 
 export const PROGRAMS: Program[] = [
@@ -62,18 +65,8 @@ export const PROGRAMS: Program[] = [
       { icon: Calendar, label: "Weekly" },
       { icon: MapPin, label: "IAGD" },
     ],
-    image: "/halaqah-crop.jpg",
-  },
-  {
-    id: "retreats",
-    icon: Tent,
-    title: "Youth Retreats",
-    description:
-      "Weekend getaways focused on personal growth, team building, and spiritual rejuvenation.",
-    meta: [
-      { icon: Calendar, label: "Seasonal" },
-      { icon: Users, label: "Limited spots" },
-    ],
+    href: "/programs/halaqas",
+    image: "/halaqah2.jpg",
   },
   {
     id: "qiyam",
@@ -85,7 +78,7 @@ export const PROGRAMS: Program[] = [
       { icon: Calendar, label: "Monthly" },
       { icon: Clock, label: "Late night" },
     ],
-    image: "/qiyam.jpg",
+    image: "/qiyam2.jpg",
   },
   {
     id: "sports",
@@ -172,8 +165,8 @@ export const GET_INVOLVED_CONTACT = {
     { icon: Phone, value: "+1 (248) 854-7214", href: "tel:+12488547214" },
     {
       icon: Mail,
-      value: "shahvayz11@gmail.com",
-      href: "mailto:shahvayz11@gmail.com",
+      value: "youthdirector@iagd.net",
+      href: "mailto:youthdirector@iagd.net",
     },
   ],
 };
@@ -185,6 +178,42 @@ export const SOCIALS = [
     href: "https://www.instagram.com/mygd_insta/?hl=en",
   },
   { icon: YoutubeIcon, label: "YouTube", href: "#" },
+] as const;
+
+export const CONNECT_LINKS = [
+  {
+    icon: InstagramIcon,
+    label: "Instagram",
+    description: "Follow @mygd_insta for updates & reels",
+    href: "https://www.instagram.com/mygd_insta/?hl=en",
+    ready: true,
+  },
+  {
+    icon: WhatsappIcon,
+    label: "WhatsApp",
+    description: "Join our WhatsApp community",
+    href: "https://chat.whatsapp.com/C4zTs9fCVC0Ctb5y5urteu",
+    ready: true,
+  },
+] as const;
+
+export const DONATE_LINKS = [
+  {
+    label: "Venmo",
+    monogram: "V",
+    color: "#3D95CE",
+    value: "@MY-GD",
+    href: "https://venmo.com/u/MY-GD",
+    copyable: false,
+  },
+  {
+    label: "Zelle",
+    monogram: "Z",
+    color: "#6D1ED4",
+    value: "mygdfinance@gmail.com",
+    href: null,
+    copyable: true,
+  },
 ] as const;
 
 export const MASJID = {

@@ -67,10 +67,10 @@ export function SiteNav() {
 
         <div className="flex items-center justify-end gap-4">
           <Link
-            href="/#contact"
+            href="/donate"
             className="hidden rounded-[8px] bg-gold px-4 py-2 font-display text-[0.75rem] font-bold whitespace-nowrap uppercase tracking-wide text-navy transition-transform hover:-translate-y-0.5 lg:inline-flex"
           >
-            Get Involved
+            Donate
           </Link>
 
           <button
@@ -129,11 +129,11 @@ export function SiteNav() {
                 transition={{ delay: 0.05 * NAV_LINKS.length, duration: 0.35 }}
               >
                 <Link
-                  href="/#contact"
+                  href="/donate"
                   onClick={() => setMenuOpen(false)}
                   className="mt-6 mb-6 block rounded-[10px] bg-gold px-5 py-3 text-center font-display text-[0.85rem] font-bold uppercase tracking-wide text-navy"
                 >
-                  Get Involved
+                  Donate
                 </Link>
               </motion.div>
             </div>
