@@ -11,6 +11,9 @@ import {
   Phone,
   Calendar,
   Clock,
+  Beef,
+  Briefcase,
+  Trophy,
 } from "lucide-react";
 import type { ComponentType } from "react";
 import {
@@ -137,6 +140,64 @@ export const EVENT_TYPES: EventType[] = [
     icon: Users,
     name: "Game Nights",
     description: "Sports, fun & competition",
+  },
+];
+
+export type Event = {
+  id: string;
+  icon: IconComponent;
+  title: string;
+  description: string;
+  date: string; // ISO date string
+  time?: string;
+  location: string;
+  tag?: string;
+  cost?: string;
+};
+
+export const UPCOMING_EVENTS: Event[] = [
+  {
+    id: "qiyaam-july",
+    icon: Moon,
+    title: "Qiyaam Night with MBA",
+    description:
+      "Late-night worship and reflection with MBA. Chai and snacks provided.",
+    date: "2026-07-24",
+    time: "Late Night",
+    location: "IAGD",
+    tag: "Spiritual",
+  },
+  {
+    id: "burger-cookoff",
+    icon: Beef,
+    title: "Burger Cookoff",
+    description:
+      "10 teams, 2-4 people per team. Bring your best recipe and compete for a cash prize. Judges include MBAM, Mufti Saab, and Dr. Z.",
+    date: "2026-07-25",
+    location: "IAGD",
+    tag: "Community",
+    cost: "$35/team",
+  },
+  {
+    id: "sisters-workshop",
+    icon: Briefcase,
+    title: "Muslim Job & Business Workshop",
+    description:
+      "A sisters-led workshop on job searching, networking, and starting a business in the Muslim community. Registration required.",
+    date: "2026-08-02",
+    time: "After Dhuhr",
+    location: "IAGD",
+    tag: "Sisters",
+  },
+  {
+    id: "futsal-tournament",
+    icon: Trophy,
+    title: "Youth Futsal Tournament",
+    description:
+      "Indoor soccer tournament for youth ages 8-14. Compete, have fun, and represent your squad.",
+    date: "2026-07-27",
+    location: "IAGD",
+    tag: "Sports",
   },
 ];
 
