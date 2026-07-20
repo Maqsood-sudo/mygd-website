@@ -6,7 +6,7 @@ import { SectionLabel } from "@/components/ui/section-label";
 import { CopyButton } from "@/components/ui/copy-button";
 import { DONATE_LINKS } from "@/lib/content";
 
-export const metadata: Metadata = { title: "Donate — MYGD" };
+export const metadata: Metadata = { title: "Donate | MYGD" };
 
 export default function DonatePage() {
   return (
@@ -63,7 +63,7 @@ export default function DonatePage() {
           </StaggerGroup>
 
           <p className="mx-auto mt-8 max-w-md text-center text-[0.8rem] text-white/40">
-            Zelle doesn&apos;t support direct payment links — copy the email
+            Zelle doesn&apos;t support direct payment links. Copy the email
             above and send from your bank&apos;s app.
           </p>
         </div>

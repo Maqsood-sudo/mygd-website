@@ -8,7 +8,7 @@ import { SectionLabel } from "@/components/ui/section-label";
 import { MagneticButton } from "@/components/ui/magnetic-button";
 
 export const metadata: Metadata = {
-  title: "The Mannered Heart Series — MYGD",
+  title: "The Mannered Heart Series | MYGD",
 };
 
 const SCHEDULE = [
@@ -37,7 +37,7 @@ export default function HalaqasPage() {
             <SectionLabel
               eyebrow="Weekly Halaqas"
               title="The Mannered Heart Series"
-              subtitle="A weekly circle building character and knowledge together — every Thursday night at IAGD."
+              subtitle="A weekly circle building character and knowledge together, every Thursday night at IAGD."
               align="center"
               light
             />
@@ -60,10 +60,10 @@ export default function HalaqasPage() {
 
             <Reveal variant="up" delay={0.2} className="mx-auto mt-10 max-w-xl">
               <p className="leading-relaxed text-white/60">
-                The Mannered Heart Series is our weekly halaqa — a space to
+                The Mannered Heart Series is our weekly halaqa, a space to
                 slow down, reflect, and grow together in character and
-                understanding. Open to all brothers, no registration needed —
-                just show up.
+                understanding. Open to all brothers, no registration needed.
+                Just show up.
               </p>
             </Reveal>
 

@@ -85,7 +85,7 @@ export const PROGRAMS: Program[] = [
     icon: Volleyball,
     title: "Sports Leagues",
     description:
-      "Competitive and recreational sports for brothers and sisters — hoops, soccer & more.",
+      "Competitive and recreational sports for brothers and sisters. Hoops, soccer & more.",
     meta: [
       { icon: Calendar, label: "Seasonal" },
       { icon: Users, label: "Team-based" },
@@ -98,7 +98,7 @@ export const PROGRAMS: Program[] = [
     icon: RollerCoaster,
     title: "Cedar Point Trip",
     description:
-      "Our annual day trip to Cedar Point — a full day of rides and brotherhood/sisterhood outside IAGD.",
+      "Our annual day trip to Cedar Point. A full day of rides and brotherhood/sisterhood outside IAGD.",
     meta: [
       { icon: Calendar, label: "Annual" },
       { icon: Users, label: "All ages" },

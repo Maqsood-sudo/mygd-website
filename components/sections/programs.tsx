@@ -15,7 +15,7 @@ export function Programs() {
           <SectionLabel
             eyebrow="What We Offer"
             title="Programs"
-            subtitle="Regular programs designed to educate, connect, and inspire — from weekly halaqas to our annual Cedar Point trip."
+            subtitle="Regular programs designed to educate, connect, and inspire. From weekly halaqas to our annual Cedar Point trip."
             light
           />
         </div>

@@ -6,7 +6,7 @@ import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/reveal";
 import { SectionLabel } from "@/components/ui/section-label";
 import { CONNECT_LINKS, GET_INVOLVED_CONTACT } from "@/lib/content";
 
-export const metadata: Metadata = { title: "Connect — MYGD" };
+export const metadata: Metadata = { title: "Connect | MYGD" };
 
 export default function ConnectPage() {
   return (
@@ -18,7 +18,7 @@ export default function ConnectPage() {
             <SectionLabel
               eyebrow="Reach Out"
               title="Let's Connect"
-              subtitle="Follow along, join the community, or reach out directly — however's easiest for you."
+              subtitle="Follow along, join the community, or reach out directly. However's easiest for you."
               align="center"
               light
             />
@@ -73,7 +73,7 @@ export default function ConnectPage() {
               </div>
               <div>
                 <div className="mb-1 font-display text-[0.95rem] font-extrabold uppercase tracking-wide text-white">
-                  {GET_INVOLVED_CONTACT.name} · {GET_INVOLVED_CONTACT.role}
+                  {GET_INVOLVED_CONTACT.role}
                 </div>
                 <div className="flex flex-wrap gap-x-5 gap-y-1">
                   {GET_INVOLVED_CONTACT.methods.map((method) => (

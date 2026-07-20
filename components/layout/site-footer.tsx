@@ -25,7 +25,7 @@ export function SiteFooter() {
             MYGD
           </div>
           <p className="mb-6 max-w-xs text-[0.82rem] leading-relaxed">
-            Muslim Youth of Greater Detroit — building community, faith, and
+            Muslim Youth of Greater Detroit. Building community, faith, and
             leadership at IAGD in Rochester Hills.
           </p>
           <div className="max-w-xs">
@@ -51,7 +51,7 @@ export function SiteFooter() {
       </div>
 
       <div className="mx-auto flex max-w-6xl flex-col gap-1 pt-6 text-[0.75rem] sm:flex-row sm:justify-between">
-        <span>© {year} MYGD — Muslim Youth of Greater Detroit</span>
+        <span>© {year} MYGD | Muslim Youth of Greater Detroit</span>
         <span className="font-semibold text-gold-light">
           Powered by Community ♥
         </span>

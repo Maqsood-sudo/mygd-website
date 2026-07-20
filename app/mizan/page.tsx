@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Scale } from "lucide-react";
 import { PlaceholderPage } from "@/components/sections/placeholder-page";
 
-export const metadata: Metadata = { title: "Mizan — MYGD" };
+export const metadata: Metadata = { title: "Mizan | MYGD" };
 
 export default function MizanPage() {
   return (

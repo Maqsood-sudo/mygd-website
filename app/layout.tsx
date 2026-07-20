@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "MYGD — Muslim Youth of Greater Detroit",
+  title: "MYGD | Muslim Youth of Greater Detroit",
   description:
     "Building community, faith, and leadership among Muslim youth across Greater Detroit through meaningful programs, events, and lasting connection.",
 };
