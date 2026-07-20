@@ -176,7 +176,7 @@ export const UPCOMING_EVENTS: Event[] = [
     icon: Beef,
     title: "Burger Cookoff",
     description:
-      "10 teams, 2-4 people per team. Bring your best recipe and compete for a cash prize. Judges include Muhammad Bin Arshad (MBAM), Mufti Saab, and Dr. Z.",
+      "10 teams, 2-4 people per team. Bring your best recipe and compete for a cash prize. Judges include Muhammad Bin Arshad (MBA), Mufti Saab, and Dr. Z.",
     date: "2026-07-25",
     location: "IAGD",
     tag: "Community",
