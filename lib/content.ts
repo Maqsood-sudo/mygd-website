@@ -13,7 +13,6 @@ import {
   Clock,
   Beef,
   Briefcase,
-  Trophy,
 } from "lucide-react";
 import type { ComponentType } from "react";
 import {
@@ -81,6 +80,7 @@ export const PROGRAMS: Program[] = [
       { icon: Calendar, label: "Monthly" },
       { icon: Clock, label: "Late night" },
     ],
+    href: "/programs/qiyams",
     image: "/qiyam2.jpg",
   },
   {
@@ -93,6 +93,7 @@ export const PROGRAMS: Program[] = [
       { icon: Calendar, label: "Seasonal" },
       { icon: Users, label: "Team-based" },
     ],
+    href: "/programs/sports",
     image: "/sports.jpg",
     imagePosition: "center 15%",
   },
@@ -172,7 +173,7 @@ export const UPCOMING_EVENTS: Event[] = [
     icon: Beef,
     title: "Burger Cookoff",
     description:
-      "10 teams, 2-4 people per team. Bring your best recipe and compete for a cash prize. Judges include MBAM, Mufti Saab, and Dr. Z.",
+      "10 teams, 2-4 people per team. Bring your best recipe and compete for a cash prize. Judges include Muhammad Bin Arshad (MBAM), Mufti Saab, and Dr. Z.",
     date: "2026-07-25",
     location: "IAGD",
     tag: "Community",
@@ -188,16 +189,6 @@ export const UPCOMING_EVENTS: Event[] = [
     time: "After Dhuhr",
     location: "IAGD",
     tag: "Sisters",
-  },
-  {
-    id: "futsal-tournament",
-    icon: Trophy,
-    title: "Youth Futsal Tournament",
-    description:
-      "Indoor soccer tournament for youth ages 8-14. Compete, have fun, and represent your squad.",
-    date: "2026-07-27",
-    location: "IAGD",
-    tag: "Sports",
   },
 ];
 
