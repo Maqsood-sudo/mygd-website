@@ -17,7 +17,8 @@ const SCHEDULE = [
   { icon: MapPin, label: "IAGD & Local Venues" },
 ];
 
-function formatDate(iso: string) {
+function formatDate(iso?: string) {
+  if (!iso) return "Date TBD";
   const date = new Date(iso + "T12:00:00");
   return date.toLocaleDateString("en-US", {
     weekday: "long",

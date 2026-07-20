@@ -15,7 +15,8 @@ const TAG_COLORS: Record<string, string> = {
   Sports: "bg-amber-500/20 text-amber-300",
 };
 
-function formatDate(iso: string) {
+function formatDate(iso?: string) {
+  if (!iso) return "Date TBD";
   const date = new Date(iso + "T12:00:00");
   return date.toLocaleDateString("en-US", {
     weekday: "long",
@@ -25,7 +26,8 @@ function formatDate(iso: string) {
   });
 }
 
-function getMonthDay(iso: string) {
+function getMonthDay(iso?: string) {
+  if (!iso) return { month: "TBD", day: "" as const };
   const date = new Date(iso + "T12:00:00");
   return {
     month: date.toLocaleDateString("en-US", { month: "short" }).toUpperCase(),

@@ -151,7 +151,7 @@ export type Event = {
   icon: IconComponent;
   title: string;
   description: string;
-  date: string; // ISO date string
+  date?: string; // ISO date string; omit if date is TBD
   time?: string;
   location: string;
   tag?: string;
@@ -199,7 +199,6 @@ export const UPCOMING_EVENTS: Event[] = [
     title: "Youth Futsal Tournament",
     description:
       "Indoor soccer tournament for youth ages 8-14. Compete, have fun, and represent your squad.",
-    date: "2026-07-27",
     location: "IAGD",
     tag: "Sports",
     signupUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfRSkYPdNRlvHK8Ys5Cs2jvXiJys3uWvJocifZSTADPrlhgig/viewform",
