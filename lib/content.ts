@@ -17,7 +17,6 @@ import {
 import type { ComponentType } from "react";
 import {
   InstagramIcon,
-  YoutubeIcon,
   WhatsappIcon,
 } from "@/components/ui/social-icons";
 
@@ -107,6 +106,8 @@ export const PROGRAMS: Program[] = [
       { icon: Calendar, label: "Annual" },
       { icon: Users, label: "All ages" },
     ],
+    href: "/programs/cedar-point",
+    image: "/cedar-point.jpg",
   },
 ];
 
@@ -206,7 +207,7 @@ export const CONTACT_INFO = [
   {
     icon: InstagramIcon,
     label: "Follow Us",
-    value: "Instagram & YouTube",
+    value: "Instagram",
   },
 ] as const;
 
@@ -229,7 +230,6 @@ export const SOCIALS = [
     label: "Instagram",
     href: "https://www.instagram.com/mygd_insta/?hl=en",
   },
-  { icon: YoutubeIcon, label: "YouTube", href: "#" },
 ] as const;
 
 export const CONNECT_LINKS = [

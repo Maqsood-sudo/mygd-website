@@ -147,6 +147,18 @@ export default function SportsPage() {
           )}
 
           <Reveal variant="up" delay={0.4} className="relative mx-auto mt-10 max-w-3xl text-center">
+            <p className="mb-6 text-[0.84rem] text-white/45">
+              Follow{" "}
+              <a
+                href="https://www.instagram.com/mygdsports/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-gold-light transition-colors hover:text-gold"
+              >
+                @mygdsports
+              </a>{" "}
+              on Instagram for updates, highlights, and registration info.
+            </p>
             <MagneticButton href="/connect" variant="gold">
               Get in Touch
             </MagneticButton>
