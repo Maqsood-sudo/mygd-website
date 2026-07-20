@@ -13,6 +13,7 @@ import {
   Clock,
   Beef,
   Briefcase,
+  Trophy,
 } from "lucide-react";
 import type { ComponentType } from "react";
 import {
@@ -155,6 +156,7 @@ export type Event = {
   location: string;
   tag?: string;
   cost?: string;
+  signupUrl?: string;
 };
 
 export const UPCOMING_EVENTS: Event[] = [
@@ -181,15 +183,26 @@ export const UPCOMING_EVENTS: Event[] = [
     cost: "$35/team",
   },
   {
-    id: "sisters-workshop",
+    id: "job-workshop",
     icon: Briefcase,
     title: "Muslim Job & Business Workshop",
     description:
-      "A sisters-led workshop on job searching, networking, and starting a business in the Muslim community. Registration required.",
+      "A workshop on job searching, networking, and starting a business in the Muslim community. Open to everyone. Registration required.",
     date: "2026-08-02",
     time: "After Dhuhr",
     location: "IAGD",
-    tag: "Sisters",
+    tag: "Community",
+  },
+  {
+    id: "futsal-tournament",
+    icon: Trophy,
+    title: "Youth Futsal Tournament",
+    description:
+      "Indoor soccer tournament for youth ages 8-14. Compete, have fun, and represent your squad.",
+    date: "2026-07-27",
+    location: "IAGD",
+    tag: "Sports",
+    signupUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfRSkYPdNRlvHK8Ys5Cs2jvXiJys3uWvJocifZSTADPrlhgig/viewform",
   },
 ];
 

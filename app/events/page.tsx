@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Calendar, Clock, MapPin, DollarSign } from "lucide-react";
+import { Calendar, Clock, MapPin, DollarSign, ExternalLink } from "lucide-react";
 import { SiteNav } from "@/components/layout/site-nav";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/reveal";
@@ -59,9 +59,17 @@ export default function EventsPage() {
               const tagClass =
                 TAG_COLORS[event.tag ?? ""] ?? "bg-white/10 text-white/60";
 
+              const Wrapper = event.signupUrl ? "a" : "div";
+              const wrapperProps = event.signupUrl
+                ? { href: event.signupUrl, target: "_blank", rel: "noreferrer" }
+                : {};
+
               return (
                 <StaggerItem key={event.id} variant="up">
-                  <div className="group flex gap-5 rounded-[16px] border border-gold/15 bg-white/5 p-6 transition-all duration-300 hover:border-gold/40 hover:bg-white/[0.08]">
+                  <Wrapper
+                    {...wrapperProps}
+                    className={`group flex gap-5 rounded-[16px] border border-gold/15 bg-white/5 p-6 transition-all duration-300 hover:border-gold/40 hover:bg-white/[0.08] ${event.signupUrl ? "cursor-pointer" : ""}`}
+                  >
                     {/* Date block */}
                     <div className="flex h-16 w-16 flex-shrink-0 flex-col items-center justify-center rounded-[12px] bg-gold-dim">
                       <span className="text-[0.6rem] font-bold tracking-widest text-gold/80">
@@ -83,6 +91,11 @@ export default function EventsPage() {
                             className={`rounded-full px-2.5 py-0.5 text-[0.65rem] font-semibold ${tagClass}`}
                           >
                             {event.tag}
+                          </span>
+                        )}
+                        {event.signupUrl && (
+                          <span className="inline-flex items-center gap-1 rounded-full bg-gold/20 px-2.5 py-0.5 text-[0.65rem] font-semibold text-gold">
+                            Sign Up <ExternalLink size={10} />
                           </span>
                         )}
                       </div>
@@ -112,7 +125,7 @@ export default function EventsPage() {
                         )}
                       </div>
                     </div>
-                  </div>
+                  </Wrapper>
                 </StaggerItem>
               );
             })}
