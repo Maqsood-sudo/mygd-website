@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Calendar, MapPin, Clock, DollarSign } from "lucide-react";
+import { Calendar, MapPin, Clock, DollarSign, ExternalLink } from "lucide-react";
 import { SiteNav } from "@/components/layout/site-nav";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Reveal, StaggerGroup, StaggerItem } from "@/components/ui/reveal";
@@ -127,6 +127,16 @@ export default function SportsPage() {
                               </span>
                             )}
                           </div>
+                          {event.signupUrl && (
+                            <a
+                              href={event.signupUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="mt-4 inline-flex items-center gap-1.5 rounded-full bg-gold px-4 py-2 text-[0.78rem] font-semibold text-navy transition-colors hover:bg-gold-light"
+                            >
+                              Sign Up <ExternalLink size={13} />
+                            </a>
+                          )}
                         </div>
                       </div>
                     </StaggerItem>
