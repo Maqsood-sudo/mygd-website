@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Calendar, Clock, MapPin, DollarSign, ExternalLink } from "lucide-react";
 import { SiteNav } from "@/components/layout/site-nav";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -61,26 +62,40 @@ export default function EventsPage() {
               const tagClass =
                 TAG_COLORS[event.tag ?? ""] ?? "bg-white/10 text-white/60";
 
-              const Wrapper = event.signupUrl ? "a" : "div";
+              const linkHref = event.signupUrl ?? event.href;
+              const Wrapper = linkHref ? "a" : "div";
               const wrapperProps = event.signupUrl
                 ? { href: event.signupUrl, target: "_blank", rel: "noreferrer" }
-                : {};
+                : event.href
+                  ? { href: event.href }
+                  : {};
 
               return (
                 <StaggerItem key={event.id} variant="up">
                   <Wrapper
                     {...wrapperProps}
-                    className={`group flex gap-5 rounded-[16px] border border-gold/15 bg-white/5 p-6 transition-all duration-300 hover:border-gold/40 hover:bg-white/[0.08] ${event.signupUrl ? "cursor-pointer" : ""}`}
+                    className={`group flex flex-col gap-5 rounded-[16px] border border-gold/15 bg-white/5 p-6 transition-all duration-300 hover:border-gold/40 hover:bg-white/[0.08] sm:flex-row ${linkHref ? "cursor-pointer" : ""}`}
                   >
-                    {/* Date block */}
-                    <div className="flex h-16 w-16 flex-shrink-0 flex-col items-center justify-center rounded-[12px] bg-gold-dim">
-                      <span className="text-[0.6rem] font-bold tracking-widest text-gold/80">
-                        {month}
-                      </span>
-                      <span className="font-display text-xl font-black leading-none text-gold">
-                        {day}
-                      </span>
-                    </div>
+                    {event.poster ? (
+                      <div className="relative aspect-[3/4] w-full flex-shrink-0 overflow-hidden rounded-[12px] border border-gold/15 bg-navy sm:w-40">
+                        <Image
+                          src={event.poster}
+                          alt={`${event.title} poster`}
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
+                    ) : (
+                      /* Date block */
+                      <div className="flex h-16 w-16 flex-shrink-0 flex-col items-center justify-center rounded-[12px] bg-gold-dim">
+                        <span className="text-[0.6rem] font-bold tracking-widest text-gold/80">
+                          {month}
+                        </span>
+                        <span className="font-display text-xl font-black leading-none text-gold">
+                          {day}
+                        </span>
+                      </div>
+                    )}
 
                     {/* Content */}
                     <div className="min-w-0 flex-1">

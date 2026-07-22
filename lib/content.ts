@@ -32,6 +32,7 @@ export const NAV_LINKS = [
   { label: "Programs", href: "/#programs" },
   { label: "Events", href: "/events" },
   { label: "Mizan", href: "/mizan" },
+  { label: "Sisters", href: "/sisters" },
   { label: "Shop", href: "/shop" },
   { label: "Connect", href: "/connect" },
 ] as const;
@@ -157,6 +158,7 @@ export type Event = {
   tag?: string;
   cost?: string;
   signupUrl?: string;
+  href?: string; // internal page link (same-tab navigation)
   poster?: string;
 };
 
@@ -172,6 +174,7 @@ export const UPCOMING_EVENTS: Event[] = [
     location: "IAGD",
     tag: "Spiritual",
     poster: "/qiyaam-poster.png",
+    href: "/programs/qiyams",
   },
   {
     id: "burger-cookoff",
@@ -183,6 +186,8 @@ export const UPCOMING_EVENTS: Event[] = [
     location: "IAGD",
     tag: "Community",
     cost: "$35/team",
+    poster: "/cookout-poster.png",
+    signupUrl: "https://linktr.ee/mygd",
   },
   {
     id: "job-workshop",
@@ -194,6 +199,8 @@ export const UPCOMING_EVENTS: Event[] = [
     time: "After Dhuhr",
     location: "IAGD",
     tag: "Community",
+    poster: "/career-workshop-poster.png",
+    signupUrl: "https://docs.google.com/forms/d/e/1FAIpQLSegWFmw7GzLxQznpuu7g2-75wqJUOu9XfXcKhjY2sqwUsR1Mg/viewform",
   },
   {
     id: "futsal-tournament",
