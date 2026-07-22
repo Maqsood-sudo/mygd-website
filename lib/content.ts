@@ -157,19 +157,21 @@ export type Event = {
   tag?: string;
   cost?: string;
   signupUrl?: string;
+  poster?: string;
 };
 
 export const UPCOMING_EVENTS: Event[] = [
   {
     id: "qiyaam-july",
     icon: Moon,
-    title: "Qiyaam Night with MBA",
+    title: "Youth Qiyaam — Choosing Your Circle",
     description:
-      "Late-night worship and reflection with MBA. Chai and snacks provided.",
+      "Late-night worship and reflection with Shaykh Muhammad Bin Arshad. Refreshments provided.",
     date: "2026-07-24",
-    time: "Late Night",
+    time: "9:00 PM",
     location: "IAGD",
     tag: "Spiritual",
+    poster: "/qiyaam-poster.png",
   },
   {
     id: "burger-cookoff",

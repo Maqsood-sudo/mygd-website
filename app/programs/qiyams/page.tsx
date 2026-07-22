@@ -94,10 +94,21 @@ export default function QiyamsPage() {
                   const Icon = event.icon;
                   return (
                     <StaggerItem key={event.id} variant="up">
-                      <div className="flex gap-5 rounded-[16px] border border-gold/15 bg-white/5 p-6">
-                        <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-[12px] bg-gold-dim">
-                          <Icon size={20} className="text-gold" />
-                        </div>
+                      <div className="flex flex-col gap-6 rounded-[16px] border border-gold/15 bg-white/5 p-6 sm:flex-row sm:items-center">
+                        {event.poster ? (
+                          <div className="relative aspect-[3/4] w-full flex-shrink-0 overflow-hidden rounded-[12px] border border-gold/15 sm:w-64">
+                            <Image
+                              src={event.poster}
+                              alt={`${event.title} poster`}
+                              fill
+                              className="object-cover"
+                            />
+                          </div>
+                        ) : (
+                          <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-[12px] bg-gold-dim">
+                            <Icon size={20} className="text-gold" />
+                          </div>
+                        )}
                         <div className="min-w-0 flex-1">
                           <h4 className="font-display text-[1rem] font-extrabold uppercase tracking-wide text-white">
                             {event.title}
