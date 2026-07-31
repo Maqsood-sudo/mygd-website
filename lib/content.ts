@@ -174,6 +174,20 @@ export const UPCOMING_EVENTS: Event[] = [
     poster: "/career-workshop-poster.png",
     signupUrl: "https://docs.google.com/forms/d/e/1FAIpQLSegWFmw7GzLxQznpuu7g2-75wqJUOu9XfXcKhjY2sqwUsR1Mg/viewform",
   },
+  {
+    id: "cedar-point",
+    icon: RollerCoaster,
+    title: "Cedar Point Trip",
+    description:
+      "A full day of rides and good company at Cedar Point. Departure will take place at IAGD. Ages 14+.",
+    date: "2026-08-20",
+    time: "8:00 AM",
+    location: "Departs from IAGD",
+    tag: "Community",
+    cost: "$60/person",
+    poster: "/cedar-point-poster.png",
+    signupUrl: "https://tinyurl.com/MYGDCedarPointReg",
+  },
 ];
 
 export const CONTACT_INFO = [

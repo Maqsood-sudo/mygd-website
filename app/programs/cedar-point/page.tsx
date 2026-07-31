@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { Calendar, MapPin, Users } from "lucide-react";
+import { Calendar, Users, DollarSign } from "lucide-react";
 import { SiteNav } from "@/components/layout/site-nav";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { Reveal } from "@/components/ui/reveal";
@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 };
 
 const DETAILS = [
-  { icon: Calendar, label: "August 2026" },
-  { icon: MapPin, label: "Cedar Point, Sandusky OH" },
-  { icon: Users, label: "All ages welcome" },
+  { icon: Calendar, label: "Aug 20, 2026 · 8 AM" },
+  { icon: Users, label: "Ages 14+" },
+  { icon: DollarSign, label: "$60 / person" },
 ];
 
 export default function CedarPointPage() {
@@ -60,16 +60,30 @@ export default function CedarPointPage() {
 
             <Reveal variant="up" delay={0.2} className="mx-auto mt-10 max-w-xl">
               <p className="leading-relaxed text-white/60">
-                Our annual Cedar Point trip is coming this August. Grab your
-                crew, hop on the bus, and spend the day at America's roller
-                coaster capital. More details on pricing, registration, and exact
-                date coming soon. Stay tuned on our Instagram and WhatsApp.
+                Our annual Cedar Point trip is here. Grab your crew and spend the
+                day at America&apos;s roller coaster capital. Departure will take place
+                at IAGD at 8 AM on August 20, 2026. Open to ages 14+ — $60 per
+                person. Spots are limited, so register early.
               </p>
             </Reveal>
 
+            <Reveal variant="up" delay={0.25} className="mx-auto mt-12 max-w-md">
+              <div className="relative aspect-[4/5] w-full overflow-hidden rounded-[16px] border border-gold/20 bg-navy-light">
+                <Image
+                  src="/cedar-point-poster.png"
+                  alt="Cedar Point Trip poster"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </Reveal>
+
             <Reveal variant="up" delay={0.3} className="mt-10">
-              <MagneticButton href="/connect" variant="gold">
-                Get in Touch
+              <MagneticButton
+                href="https://tinyurl.com/MYGDCedarPointReg"
+                variant="gold"
+              >
+                Register
               </MagneticButton>
             </Reveal>
           </div>
