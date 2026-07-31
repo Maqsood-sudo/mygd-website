@@ -75,9 +75,8 @@ export default function QiyamsPage() {
 
             <Reveal variant="up" delay={0.2} className="mx-auto mt-10 max-w-xl">
               <p className="leading-relaxed text-white/60">
-                Our monthly Qiyam nights are a space to pause from the noise,
-                stand together in prayer, and reconnect with Allah. Open to all
-                brothers and sisters. Chai and snacks provided.
+                We have monthly qiyams where we bring in guest speakers. Open to
+                all brothers and sisters. Chai and snacks provided.
               </p>
             </Reveal>
           </div>

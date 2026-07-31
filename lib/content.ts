@@ -11,9 +11,7 @@ import {
   Phone,
   Calendar,
   Clock,
-  Beef,
   Briefcase,
-  Trophy,
 } from "lucide-react";
 import type { ComponentType } from "react";
 import {
@@ -164,32 +162,6 @@ export type Event = {
 
 export const UPCOMING_EVENTS: Event[] = [
   {
-    id: "qiyaam-july",
-    icon: Moon,
-    title: "Youth Qiyaam — Choosing Your Circle",
-    description:
-      "Late-night worship and reflection with Shaykh Muhammad Bin Arshad. Refreshments provided.",
-    date: "2026-07-24",
-    time: "9:00 PM",
-    location: "IAGD",
-    tag: "Spiritual",
-    poster: "/qiyaam-poster.png",
-    href: "/programs/qiyams",
-  },
-  {
-    id: "burger-cookoff",
-    icon: Beef,
-    title: "Burger Cookoff",
-    description:
-      "10 teams, 2-4 people per team. Bring your best recipe and compete for a cash prize. Judges include Muhammad Bin Arshad (MBA), Mufti Saab, and Dr. Z.",
-    date: "2026-07-25",
-    location: "IAGD",
-    tag: "Community",
-    cost: "$35/team",
-    poster: "/cookout-poster.png",
-    signupUrl: "https://linktr.ee/mygd",
-  },
-  {
     id: "job-workshop",
     icon: Briefcase,
     title: "Muslim Job & Business Workshop",
@@ -201,16 +173,6 @@ export const UPCOMING_EVENTS: Event[] = [
     tag: "Community",
     poster: "/career-workshop-poster.png",
     signupUrl: "https://docs.google.com/forms/d/e/1FAIpQLSegWFmw7GzLxQznpuu7g2-75wqJUOu9XfXcKhjY2sqwUsR1Mg/viewform",
-  },
-  {
-    id: "futsal-tournament",
-    icon: Trophy,
-    title: "Youth Futsal Tournament",
-    description:
-      "Indoor soccer tournament for youth ages 8-14. Compete, have fun, and represent your squad.",
-    location: "IAGD",
-    tag: "Sports",
-    signupUrl: "https://docs.google.com/forms/d/e/1FAIpQLSfRSkYPdNRlvHK8Ys5Cs2jvXiJys3uWvJocifZSTADPrlhgig/viewform",
   },
 ];
 
