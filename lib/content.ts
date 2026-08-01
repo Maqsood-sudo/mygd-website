@@ -188,6 +188,20 @@ export const UPCOMING_EVENTS: Event[] = [
     poster: "/cedar-point-poster.png",
     signupUrl: "https://tinyurl.com/MYGDCedarPointReg",
   },
+  {
+    id: "mizan-bbq",
+    icon: UtensilsCrossed,
+    title: "Mizan BBQ",
+    description:
+      "An evening of great food, good vibes, and meaningful connections with the Mizan community. Come hungry and bring your friends.",
+    date: "2026-08-23",
+    time: "3:00 PM – 11:00 PM",
+    location: "1810 W Square Lake Rd, Troy, MI 48098",
+    tag: "Community",
+    cost: "$5 early bird / $10",
+    href: "/mizan",
+    signupUrl: "https://www.zeffy.com/en-US/ticketing/mizan-bbq",
+  },
 ];
 
 export const CONTACT_INFO = [
