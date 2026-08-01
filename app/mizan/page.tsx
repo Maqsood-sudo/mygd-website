@@ -10,7 +10,7 @@ export const metadata: Metadata = { title: "Mizan BBQ | MYGD" };
 
 const DETAILS = [
   { icon: Calendar, label: "Aug 23, 2026" },
-  { icon: Clock, label: "3:00 PM – 11:00 PM EDT" },
+  { icon: Clock, label: "3:00 PM EDT" },
   { icon: MapPin, label: "1810 W Square Lake Rd, Troy, MI" },
   { icon: DollarSign, label: "$5 early bird · $10 general" },
 ];
@@ -54,7 +54,7 @@ export default function MizanPage() {
                 with fellow Muslim young professionals.
               </p>
               <p className="mt-4 leading-relaxed text-white/60">
-                Bring your friends and come hungry — we look forward to seeing you
+                Bring your friends and come hungry. We look forward to seeing you
                 there, insha&apos;Allah!
               </p>
             </Reveal>
