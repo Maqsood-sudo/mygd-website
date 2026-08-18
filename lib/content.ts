@@ -11,7 +11,6 @@ import {
   Phone,
   Calendar,
   Clock,
-  Briefcase,
 } from "lucide-react";
 import type { ComponentType } from "react";
 import {
@@ -161,33 +160,6 @@ export type Event = {
 };
 
 export const UPCOMING_EVENTS: Event[] = [
-  {
-    id: "job-workshop",
-    icon: Briefcase,
-    title: "Muslim Job & Business Workshop",
-    description:
-      "A workshop on job searching, networking, and starting a business in the Muslim community. Open to everyone. Registration required.",
-    date: "2026-08-02",
-    time: "After Dhuhr",
-    location: "IAGD",
-    tag: "Community",
-    poster: "/career-workshop-poster.png",
-    signupUrl: "https://docs.google.com/forms/d/e/1FAIpQLSegWFmw7GzLxQznpuu7g2-75wqJUOu9XfXcKhjY2sqwUsR1Mg/viewform",
-  },
-  {
-    id: "cedar-point",
-    icon: RollerCoaster,
-    title: "Cedar Point Trip",
-    description:
-      "A full day of rides and good company at Cedar Point. Departure will take place at IAGD. Ages 14+.",
-    date: "2026-08-20",
-    time: "8:00 AM",
-    location: "Departs from IAGD",
-    tag: "Community",
-    cost: "$60/person",
-    poster: "/cedar-point-poster.png",
-    signupUrl: "https://tinyurl.com/MYGDCedarPointReg",
-  },
   {
     id: "mizan-bbq",
     icon: UtensilsCrossed,
