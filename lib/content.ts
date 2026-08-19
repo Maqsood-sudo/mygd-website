@@ -29,7 +29,6 @@ export const NAV_LINKS = [
   { label: "Programs", href: "/#programs" },
   { label: "Events", href: "/events" },
   { label: "Mizan", href: "/mizan" },
-  { label: "Sisters", href: "/sisters" },
   { label: "Shop", href: "/shop" },
   { label: "Connect", href: "/connect" },
 ] as const;
