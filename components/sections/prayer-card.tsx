@@ -102,13 +102,27 @@ export function PrayerCard() {
                 );
               })}
             </AnimatePresence>
-            <li className="mt-2 flex items-center justify-between rounded-[10px] border border-gold/25 bg-gold-dim px-3.5 py-2.5">
-              <span className="text-[0.9rem] font-semibold text-gold-light">
+            <li className="mt-2 rounded-[10px] border border-gold/25 bg-gold-dim px-3.5 py-2.5">
+              <div className="mb-1 text-[0.7rem] font-bold uppercase tracking-wider text-gold-light">
                 Jummah
-              </span>
-              <span className="text-[0.9rem] font-medium tabular-nums text-white/70">
-                2:00 · 3:00 · 4:00 PM
-              </span>
+              </div>
+              {[
+                { label: "1st Jummah", time: "2:00 PM" },
+                { label: "2nd Jummah", time: "3:00 PM" },
+                { label: "3rd Jummah", time: "4:00 PM" },
+              ].map((j) => (
+                <div
+                  key={j.label}
+                  className="flex items-center justify-between py-0.5"
+                >
+                  <span className="text-[0.9rem] font-semibold text-white/80">
+                    {j.label}
+                  </span>
+                  <span className="text-[0.9rem] font-medium tabular-nums text-white/70">
+                    {j.time}
+                  </span>
+                </div>
+              ))}
             </li>
           </ul>
         ) : (
