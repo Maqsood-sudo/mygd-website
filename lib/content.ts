@@ -160,18 +160,18 @@ export type Event = {
 
 export const UPCOMING_EVENTS: Event[] = [
   {
-    id: "mizan-bbq",
-    icon: UtensilsCrossed,
-    title: "Mizan BBQ",
+    id: "ilm-explorers",
+    icon: BookOpen,
+    title: "IAGD ILM: Explorers",
     description:
-      "An evening of great food, good vibes, and meaningful connections with the Mizan community. Come hungry and bring your friends.",
-    date: "2026-08-23",
-    time: "3:00 PM",
-    location: "1810 W Square Lake Rd, Troy, MI 48098",
+      "An interactive 8-week Tasheel series-based program with weekly Naseeha, sports, and hands-on STEM challenges. Boys & girls ages 7–12. Fee includes all 8 weeks + weekly lunch.",
+    date: "2026-09-12",
+    time: "Dhur – 4:30 PM",
+    location: "879 W Auburn Rd, Rochester Hills, MI 48307",
     tag: "Community",
-    cost: "$5 early bird / $10",
-    href: "/mizan",
-    signupUrl: "https://www.zeffy.com/en-US/ticketing/mizan-bbq",
+    cost: "$70",
+    signupUrl: "https://linktr.ee/iagdmasjid",
+    poster: "/ilm-explorers-poster.png",
   },
 ];
 
