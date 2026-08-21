@@ -170,7 +170,8 @@ export const UPCOMING_EVENTS: Event[] = [
     location: "879 W Auburn Rd, Rochester Hills, MI 48307",
     tag: "Community",
     cost: "$70",
-    signupUrl: "https://linktr.ee/iagdmasjid",
+    signupUrl:
+      "https://docs.google.com/forms/d/e/1FAIpQLSdHMe_JP71hNLU9fk96XcdvePWJtZgZ8Y9Y9_W09tAukQ9KrA/viewform",
     poster: "/ilm-explorers-poster.png",
   },
 ];
