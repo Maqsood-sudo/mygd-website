@@ -102,6 +102,14 @@ export function PrayerCard() {
                 );
               })}
             </AnimatePresence>
+            <li className="mt-2 flex items-center justify-between rounded-[10px] border border-gold/25 bg-gold-dim px-3.5 py-2.5">
+              <span className="text-[0.9rem] font-semibold text-gold-light">
+                Jummah
+              </span>
+              <span className="text-[0.9rem] font-medium tabular-nums text-white/70">
+                2:00 · 3:00 · 4:00 PM
+              </span>
+            </li>
           </ul>
         ) : (
           <ul className="animate-pulse">
