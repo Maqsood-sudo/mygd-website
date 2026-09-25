@@ -27,7 +27,6 @@ export const NAV_LINKS = [
   { label: "About", href: "/#about" },
   { label: "Programs", href: "/#programs" },
   { label: "Events", href: "/events" },
-  { label: "Mizan", href: "/mizan" },
   { label: "Shop", href: "/shop" },
   { label: "Connect", href: "/connect" },
 ] as const;
@@ -64,7 +63,7 @@ export const PROGRAMS: Program[] = [
       { icon: MapPin, label: "IAGD" },
     ],
     href: "/programs/halaqas",
-    image: "/halaqah2.jpg",
+    image: "/qiyaam-poster.png",
   },
   {
     id: "qiyam",
@@ -77,7 +76,7 @@ export const PROGRAMS: Program[] = [
       { icon: Clock, label: "Late night" },
     ],
     href: "/programs/qiyams",
-    image: "/qiyaam-poster.png",
+    image: "/qiyam2.jpg",
   },
   {
     id: "sports",
