@@ -4,7 +4,6 @@ import { NewsletterSignup } from "./newsletter-signup";
 
 const PROGRAM_LINKS = [
   { label: "All Programs", href: "/#programs" },
-  { label: "Cedar Point Trip", href: "/#programs" },
   { label: "Upcoming Events", href: "/events" },
 ];
 

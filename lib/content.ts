@@ -2,7 +2,6 @@ import {
   BookOpen,
   Moon,
   Volleyball,
-  RollerCoaster,
   Flame,
   UtensilsCrossed,
   Users,
@@ -78,7 +77,7 @@ export const PROGRAMS: Program[] = [
       { icon: Clock, label: "Late night" },
     ],
     href: "/programs/qiyams",
-    image: "/qiyam2.jpg",
+    image: "/qiyaam-poster.png",
   },
   {
     id: "sports",
@@ -93,19 +92,6 @@ export const PROGRAMS: Program[] = [
     href: "/programs/sports",
     image: "/sports.jpg",
     imagePosition: "center 15%",
-  },
-  {
-    id: "cedar-point",
-    icon: RollerCoaster,
-    title: "Cedar Point Trip",
-    description:
-      "Our annual day trip to Cedar Point. A full day of rides and brotherhood/sisterhood outside IAGD.",
-    meta: [
-      { icon: Calendar, label: "Annual" },
-      { icon: Users, label: "All ages" },
-    ],
-    href: "/programs/cedar-point",
-    image: "/cedar-point.jpg",
   },
 ];
 
@@ -160,19 +146,15 @@ export type Event = {
 
 export const UPCOMING_EVENTS: Event[] = [
   {
-    id: "ilm-explorers",
-    icon: BookOpen,
-    title: "IAGD ILM: Explorers",
+    id: "qiyam-october",
+    icon: Moon,
+    title: "Monthly Qiyam",
     description:
-      "An interactive 8-week Tasheel series-based program with weekly Naseeha, sports, and hands-on STEM challenges. Boys & girls ages 7–12. Fee includes all 8 weeks + weekly lunch.",
-    date: "2026-09-12",
-    time: "Dhur – 4:30 PM",
+      "Late-night worship gathering that strengthens our connection with Allah and each other. Open to all brothers and sisters. Chai and snacks provided.",
+    date: "2026-10-02",
+    time: "After Isha",
     location: "879 W Auburn Rd, Rochester Hills, MI 48307",
-    tag: "Community",
-    cost: "$70",
-    signupUrl:
-      "https://docs.google.com/forms/d/e/1FAIpQLSdHMe_JP71hNLU9fk96XcdvePWJtZgZ8Y9Y9_W09tAukQ9KrA/viewform",
-    poster: "/ilm-explorers-poster.png",
+    tag: "Spiritual",
   },
 ];
 

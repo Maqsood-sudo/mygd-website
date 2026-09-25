@@ -72,6 +72,43 @@ export function About() {
               </StaggerItem>
             ))}
           </StaggerGroup>
+
+          <Reveal
+            variant="up"
+            delay={0.15}
+            className="mt-8 flex flex-col gap-5 rounded-[18px] border border-black/5 bg-white p-6 shadow-[0_12px_36px_rgba(15,30,46,0.08)] sm:flex-row sm:items-start"
+          >
+            <div className="relative h-24 w-24 flex-shrink-0 overflow-hidden rounded-full ring-4 ring-gold/20 sm:h-28 sm:w-28">
+              <Image
+                src="/sheikh-arshad.jpg"
+                alt="Shaykh Muhammad bin Arshad"
+                fill
+                sizes="112px"
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <div className="text-[1.05rem] font-bold text-navy">
+                Shaykh Muhammad bin Arshad
+              </div>
+              <div className="text-[0.78rem] font-semibold uppercase tracking-[0.08em] text-gold">
+                Imam &amp; Youth Director
+              </div>
+              <p className="mt-3 text-[0.92rem] italic leading-[1.7] text-[#555]">
+                &ldquo;From Lahore to Edinburgh to Detroit&mdash;every step of
+                my path has been guided by Allah&apos;s mercy. I serve the
+                youth, but it is I who grow with them.&rdquo;
+              </p>
+              <p className="mt-3 text-[0.88rem] leading-[1.75] text-[#444]">
+                A Hafiz of the Quran since age ten, Shaykh Muhammad is a
+                graduate of Jamia Ashrafia in Lahore and holds dual
+                master&apos;s degrees in Islamic Studies from the University
+                of the Punjab and the University of Aberdeen. He is currently
+                pursuing a PhD at the University of Edinburgh on the theory of
+                abrogation in the Quran.
+              </p>
+            </div>
+          </Reveal>
         </Reveal>
       </div>
     </section>
