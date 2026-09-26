@@ -92,7 +92,7 @@ export function About() {
                 Shaykh Muhammad bin Arshad
               </div>
               <div className="text-[0.78rem] font-semibold uppercase tracking-[0.08em] text-gold">
-                Imam &amp; Youth Director
+                Youth Director
               </div>
               <p className="mt-3 text-[0.92rem] italic leading-[1.7] text-[#555]">
                 &ldquo;From Lahore to Edinburgh to Detroit&mdash;every step of
@@ -100,7 +100,7 @@ export function About() {
                 youth, but it is I who grow with them.&rdquo;
               </p>
               <p className="mt-3 text-[0.88rem] leading-[1.75] text-[#444]">
-                A Hafiz of the Quran since age ten, Shaykh Muhammad is a
+                A Hafiz of the Quran since age nine, Shaykh Muhammad is a
                 graduate of Jamia Ashrafia in Lahore and holds dual
                 master&apos;s degrees in Islamic Studies from the University
                 of the Punjab and the University of Aberdeen. He is currently
